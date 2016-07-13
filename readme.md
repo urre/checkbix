@@ -6,6 +6,24 @@ Simple styling for checkboxes. Wip.
 
 ## Usage
 
+### Include files
+
+```html
+<link rel="stylesheet" href="dist/css/checkbix.min.css">
+```
+
+```html
+<script src="dist/js/checkbix.min.js"></script>
+```
+
+#### Init
+
+```html
+<script>
+    Checkbix.init();
+</script>
+```
+
 ### Default
 
 ```html
