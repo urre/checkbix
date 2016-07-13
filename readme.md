@@ -1,5 +1,7 @@
 # Checkbix
 
+[![Build Status](https://travis-ci.org/urre/checkbix.svg?branch=master)](https://travis-ci.org/urre/checkbix)
+
 Simple nice checkboxes. Wip.
 
 ## Dev
