@@ -16,7 +16,7 @@
     "build:all": "npm run build:css && npm run build:js",
     "watch:css": "onchange 'src/css' -- npm run build:css",
     "watch:js": "onchange 'src/js' -- npm run build:js",
-    "watch:all": "npm-run-all -p serve watch:css watch:js",
+    "watch:all": "npm-run-all -p serve watch:css watch:js"
   },
   "repository": {
     "type": "git",
@@ -34,9 +34,9 @@
   "homepage": "https://urre.github.io/checkbix/",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
-    "babel-eslint": "^6.1.2",
     "browser-sync": "^2.12.8",
     "clean-css": "^3.4.18",
+    "eslint": "^3.0.1",
     "npm-run-all": "^2.1.1",
     "onchange": "^2.4.0",
     "postcss-cli": "^2.5.2",
