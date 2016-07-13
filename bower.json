@@ -8,7 +8,7 @@
   "description": "A simple checkbox plugin written in vanilla javascript",
   "main": [
     "dist/css/checkbix.css",
-    "dist/js/checkbix.min.js"
+    "dist/js/checkbix.js"
   ],
   "moduleType": [
     "globals",
