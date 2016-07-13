@@ -34,7 +34,6 @@
   "homepage": "https://urre.github.io/checkbix/",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
-    "babel-eslint": "^6.1.2",
     "browser-sync": "^2.12.8",
     "clean-css": "^3.4.18",
     "npm-run-all": "^2.1.1",
