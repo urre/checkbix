@@ -1,19 +1,22 @@
+/* global define, exports: true, module*/
 (function(root, factory) {
-	if (typeof define === 'function' && define.amd) {
-		define([], factory(root));
-	} else if (typeof exports === 'object') {
-		module.exports = factory(root);
-	} else {
-		root.checkBix = factory(root);
+	'use strict';
+
+	if(typeof define === 'function' && define.amd) {
+		define('Checkbix', factory);
 	}
-})(typeof global !== 'undefined' ? global : this.window || this.global, function (root) {
+	else if(typeof exports === 'object') {
+		exports = module.exports = factory();
+	}
+	else {
+		root.Checkbix = factory();
+	}
+})(this, function() {
 
 	'use strict';
 
 	var checkBix = {};
-	var supports = !!document.querySelector && !!root.addEventListener;
 	var settings;
-
 
 	// Default settings
 	var defaults = {
@@ -23,9 +26,6 @@
 	/**
 	* A simple forEach() implementation for Arrays, Objects and NodeLists
 	* @private
-	* @param {Array|Object|NodeList} collection Collection of items to iterate
-	* @param {Function} callback Callback function for each iteration
-	* @param {Array|Object|NodeList} scope Object/NodeList/Array that forEach is iterating over
 	*/
 	var forEach = function (collection, callback, scope) {
 		if (Object.prototype.toString.call(collection) === '[object Object]') {
@@ -44,9 +44,6 @@
 	/**
 	* Merge defaults with user options
 	* @private
-	* @param {Object} defaults Default settings
-	* @param {Object} options User options
-	* @returns {Object} Merged values of defaults and options
 	*/
 	var extend = function ( defaults, options ) {
 		var extended = {};
@@ -67,7 +64,10 @@
 
 		var checkboxes = document.querySelectorAll('.'+settings.initClass);
 		for (var i = 0; i < checkboxes.length; i++) {
-			checkboxes[i].insertAdjacentHTML('afterend', '<label aria-label="Checkbox" role="checkbox" for="'+checkboxes[i].id+'" class="'+settings.initClass+'"><span></span>'+checkboxes[i].getAttribute('data-text')+'</label>');
+
+			var size = checkboxes[i].getAttribute('data-size') ? checkboxes[i].getAttribute('data-size') : '';
+
+			checkboxes[i].insertAdjacentHTML('afterend', '<label aria-label="Checkbox" role="checkbox" for="'+checkboxes[i].id+'" class="'+settings.initClass+'"><span class="'+size+'"></span>'+checkboxes[i].getAttribute('data-text')+'</label>');
 		}
 
 	};
@@ -78,14 +78,14 @@
 	*/
 	checkBix.destroy = function () {
 
-	// If plugin isn't already initialized, stop
-	if ( !settings ) return;
+		// If plugin isn't already initialized, stop
+		if ( !settings ) return;
 
-	// Remove event listeners
-	document.removeEventListener('click', buildMarkup, false);
+		// Remove event listeners
+		document.removeEventListener('click', buildMarkup, false);
 
-	// Reset variables
-	settings = null;
+		// Reset variables
+		settings = null;
 
 	};
 
@@ -93,12 +93,8 @@
 	/**
 	* Initialize
 	* @public
-	* @param {Object} options User settings
 	*/
 	checkBix.init = function ( options ) {
-
-		// feature test
-		if ( !supports ) return;
 
 		// Destroy any existing initializations
 		checkBix.destroy();
@@ -106,7 +102,7 @@
 		// Merge user options with defaults
 		settings = extend( defaults, options || {} );
 
-		// Events
+		// Add events, currently only the checkbox markup build
 		document.addEventListener('DOMContentLoaded', buildMarkup, false);
 
 	};

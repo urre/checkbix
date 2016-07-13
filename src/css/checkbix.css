@@ -10,6 +10,7 @@ input[type='checkbox'].checkbix + label{
   align-items: center;
   color: inherit;
   transition: all 250ms cubic-bezier(.4,.0,.23,1);
+  margin-bottom: .15rem;
 }
 
 input[type='checkbox'].checkbix + label > span {
@@ -17,14 +18,19 @@ input[type='checkbox'].checkbix + label > span {
   justify-content: center;
   align-items: center;
   margin-right: .5em;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   background: transparent;
   border: .1rem solid #333;
   border-radius: 1px;
   cursor: pointer;  
   transition: all 250ms cubic-bezier(.4,.0,.23,1);
   position: relative;
+}
+
+input[type='checkbox'].checkbix[data-size='large'] + label > span {
+	width: 24px;
+	height: 24px;
 }
 
 input[type='checkbox'].checkbix:checked + label > span {
@@ -51,6 +57,10 @@ input[type='checkbox'].checkbix:checked + label > span:before {
   animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.5,1) forwards;
 }
 
+input[type='checkbox'].checkbix[data-size='large'] + label > span:before {
+	animation: checkbox-check-large 125ms 250ms cubic-bezier(.4,.0,.5,1) forwards;
+}
+
 @keyframes reveal{
   0%{
     transform: scale(1);
@@ -63,7 +73,7 @@ input[type='checkbox'].checkbix:checked + label > span:before {
   }
 }
 
-@keyframes checkbox-check{
+@keyframes checkbox-check {
   0%{
     width: 0;
     height: 0;
@@ -80,5 +90,25 @@ input[type='checkbox'].checkbix:checked + label > span:before {
     height: .5em;    
     border-color: white;
     transform: translate3d(0,-.5em,0) rotate(45deg);
+  }
+}
+
+@keyframes checkbox-check-large {
+  0%{
+    width: 0;
+    height: 0;
+    border-color: white;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  33%{
+    width: .3em;
+    height: 0;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  100%{    
+    width: .3em;
+    height: .6em;    
+    border-color: white;
+    transform: translate3d(0,-.6em,0) rotate(45deg);
   }
 }

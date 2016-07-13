@@ -1,22 +1,16 @@
 # Checkbix
 
-Simple checkbox styling
-
-[![Build Status](https://travis-ci.org/urre/checkbix.svg?branch=master)](https://travis-ci.org/urre/checkbix)
-
-## Usage
-
-Add html like this
-
-```html
-<input id="checkbix1" type="checkbox" class="checkbix" data-text="Customized using Checkbix">
-```
+Simple nice checkboxes. Wip.
 
 ## Dev
 
 Build
 
     npm run build:all    
+
+Watch
+
+    npm run watch:all
 
 Serve
     

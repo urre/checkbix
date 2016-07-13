@@ -6,9 +6,11 @@
     "Urban Sanden <hej@urre.me>"
   ],
   "description": "A simple checkbox plugin written in vanilla javascript",
-  "main": "dist/js/checkbix.min.js",
+  "main": [
+    "dist/css/checkbix.css",
+    "dist/js/checkbix.min.js"
+  ],
   "moduleType": [
-    "amd",
     "globals",
     "node"
   ],
@@ -22,8 +24,5 @@
   "license": "MIT",
   "ignore": [
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
   ]
 }
