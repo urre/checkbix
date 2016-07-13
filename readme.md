@@ -1,10 +1,10 @@
 # Checkbix
 
-[![Build Status](https://travis-ci.org/urre/checkbix.svg?branch=master)](https://travis-ci.org/urre/checkbix) ![](https://badge-size.herokuapp.com/urre/checkbix/master/dist/js/checkbix.min.js.svg?label=Minified_js_size) ![](https://badge-size.herokuapp.com/urre/checkbix/master/dist/js/checkbix.js.svg?label=Normal_js_size) ![](https://badge-size.herokuapp.com/urre/checkbix/master/dist/css/checkbix.min.css.svg?label=CSS_size)
+[![Build Status](https://travis-ci.org/urre/checkbix.svg?branch=master)](https://travis-ci.org/urre/checkbix) ![](https://badge-size.herokuapp.com/urre/checkbix/master/dist/js/checkbix.min.js.svg)
 
 Simple styling for checkboxes. Wip.
 
-## Use
+## Usage
 
 ### Default
 
