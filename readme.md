@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/urre/checkbix.svg?branch=master)](https://travis-ci.org/urre/checkbix)
 
-![](https://badge-size.herokuapp.com/urre/checkbix/master/src/js/checkbix.js.svg
+![](https://badge-size.herokuapp.com/urre/checkbix/master/src/js/checkbix.js.svg)
 
 Simple nice checkboxes. Wip.
 
