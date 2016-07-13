@@ -1,0 +1,84 @@
+input[type='checkbox'].checkbix { 
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+input[type='checkbox'].checkbix + label{
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  transition: all 250ms cubic-bezier(.4,.0,.23,1);
+}
+
+input[type='checkbox'].checkbix + label > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: .5em;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: .1rem solid #333;
+  border-radius: 1px;
+  cursor: pointer;  
+  transition: all 250ms cubic-bezier(.4,.0,.23,1);
+  position: relative;
+}
+
+input[type='checkbox'].checkbix:checked + label > span {
+  background: #5ECD62;
+  border: .1rem solid transparent;
+  animation: reveal 200ms cubic-bezier(.4,.0,.5,1);
+}
+
+input[type='checkbox'].checkbix:focus + label > span {
+  outline: 1px solid rgba(0,0,0,.2);
+}
+
+input[type='checkbox'].checkbix:checked + label > span:before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: rotate(45deg);
+  transform-origin: 0% 100%;
+  animation: checkbox-check 125ms 250ms cubic-bezier(.4,.0,.5,1) forwards;
+}
+
+@keyframes reveal{
+  0%{
+    transform: scale(1);
+  }
+  33%{    
+    transform: scale(.5);
+  }
+  100%{
+    transform: scale(1);    
+  }
+}
+
+@keyframes checkbox-check{
+  0%{
+    width: 0;
+    height: 0;
+    border-color: white;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  33%{
+    width: .2em;
+    height: 0;
+    transform: translate3d(0,0,0) rotate(45deg);
+  }
+  100%{    
+    width: .2em;
+    height: .5em;    
+    border-color: white;
+    transform: translate3d(0,-.5em,0) rotate(45deg);
+  }
+}

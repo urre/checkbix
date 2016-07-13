@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkbix</title>
+	<link rel="stylesheet" href="dist/css/checkbix.css">
+	<style>
+		body{
+			padding: 4rem;
+			color: #191919;
+			line-height: 1.5;
+			font-weight: 300;
+			font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,sans-serif;
+			margin: 0 auto;
+			max-width: 64em;
+		}
+		div {
+			margin-top: 2rem;
+		}
+		.label {
+			font-size: .875rem;
+			font-weight: bold;
+			display: block;
+			margin-bottom: .5rem;
+		}
+
+		.input {
+			font-family: inherit;
+			font-size: inherit;
+			display: block;
+			width: 100%;
+			height: 2.5rem;
+			padding: .5rem;
+			margin-bottom: 1rem;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+
+		.select {
+			font-family: inherit;
+			font-size: inherit;
+			display: block;
+			width: 100%;
+			height: 2.5rem;
+			padding: .5rem;
+			margin-bottom: 1rem;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+
+		.textarea {
+			font-family: inherit;
+			font-size: inherit;
+			display: block;
+			width: 100%;
+			padding: .5rem;
+			margin-bottom: 1rem;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Checkbix</h1>
+	<h2>Simple styling for checkboxes. </h2>
+
+	<form action="#" method="post">
+
+		<div>
+			<label for="regular">
+				<input id="regular" type="checkbox">Regular checkbox
+			</label>
+
+			<input id="checkbix1" type="checkbox" class="checkbix" data-text="Customized using Checkbix">
+
+			<input id="checkbix2" type="checkbox" class="checkbix" data-text="Customized using Checkbix, checked" data-size="large" data-corners="rounded" checked>
+		</div>
+
+		<div>
+			<label for="name">Text Input</label>
+			<input type="text" name="name" class="input" id="name" value="" tabindex="1" />
+		</div>
+
+		<div>
+			<label for="select-choice">Select Dropdown Choice:</label>
+			<select name="select-choice" class="select" id="select-choice">
+				<option value="Choice 1">Choice 1</option>
+				<option value="Choice 2">Choice 2</option>
+				<option value="Choice 3">Choice 3</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="textarea">Textarea:</label>
+			<textarea cols="40" rows="8" name="textarea" class="textarea" id="textarea"></textarea>
+		</div>
+
+		<div>
+			<input type="submit" value="Submit" disabled />
+		</div>
+	</form>
+
+
+
+	<script src="dist/js/checkbix.min.js"></script>
+	<script>
+
+		checkBix.init();
+
+	</script>
+
+</body>
+</html>
