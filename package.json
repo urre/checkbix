@@ -8,9 +8,10 @@
     "clean": "rm -f dist/{css/*,js/*}",
     "css": "mkdir -p dist/css && cp src/css/* dist/css",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "minify-css": "cleancss --skip-aggressive-merging --skip-restructuring dist/css/checkbix.css -o dist/css/checkbix.min.css",
     "lint": "eslint src/js/*.js || true",
     "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/checkbix.js && uglifyjs src/js/*.js -m -c -o dist/js/checkbix.min.js",
-    "build:css": "npm run css && npm run autoprefixer",
+    "build:css": "npm run css && npm run autoprefixer && npm run minify-css",
     "build:js": "npm run lint && npm run uglify",
     "build:all": "npm run build:css && npm run build:js",
     "watch:css": "onchange 'src/css' -- npm run build:css",
@@ -19,23 +20,24 @@
     "postinstall": "npm run build:all && npm run watch:all"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/urre/checkbix.git"
-    },
+    "type": "git",
+    "url": "https://github.com/urre/checkbix.git"
+  },
   "author": "Urban Sanden <hej@urre.me>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/urre/checkbix/issues"
   },
   "keywords": [
-      "checkbox",
-      "js"
-    ],
+    "checkbox",
+    "js"
+  ],
   "homepage": "https://urre.github.io/checkbix/",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-eslint": "^6.1.2",
     "browser-sync": "^2.12.8",
+    "clean-css": "^3.4.18",
     "npm-run-all": "^2.1.1",
     "onchange": "^2.4.0",
     "postcss-cli": "^2.5.2",
