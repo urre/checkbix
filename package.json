@@ -31,7 +31,7 @@
       "checkbox",
       "js"
     ],
-  "homepage": "https://github.com/checkbix/checkbix",
+  "homepage": "https://urre.github.io/checkbix/",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-eslint": "^6.1.2",
