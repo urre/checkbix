@@ -86,9 +86,23 @@
 	<img src="https://badge-size.herokuapp.com/urre/checkbix/master/dist/js/checkbix.min.js.svg?label=JS size" alt="File size">
 	<iframe src="https://ghbtns.com/github-btn.html?user=urre&repo=checkbix&type=star" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
 
-		<h2>Usage</h2>
+	<h2>Usage</h2>
 
-		<h3>Install</h3>
+	<h3>Default</h3>
+	<input id="mycheckbox" type="checkbox" class="checkbix" data-text="Checkbix">
+
+<pre><code class="html">
+&lt;input id="mycheckbox" type="checkbox" class="checkbix" data-text="Checkbix. Large, checked" data-size="large" checked&gt;
+</code></pre>
+
+	<h3>Size</h3>
+	<input id="myothercheckbox" type="checkbox" class="checkbix" data-text="Checkbix. Large, checked" data-size="large" checked>
+
+<pre><code class="html">
+&lt;input id="myothercheckbox" type="checkbox" class="checkbix" data-text="Checkbix. Large, checked" data-size="large" checked&gt;
+</code></pre>
+
+	<h2>Install</h2>
 
 <pre><code class="bash">
 bower install checkbix
@@ -98,8 +112,7 @@ bower install checkbix
 npm install checkbix
 </code></pre>
 
-
-		<h3>Include files</h3>
+	<h3>Include files</h3>
 
 <pre><code class="html">
 &lt;link rel="stylesheet" href="dist/css/checkbix.min.css"&gt;
@@ -109,27 +122,14 @@ npm install checkbix
 &lt;script src="dist/js/checkbix.min.js"&gt;&lt;/script&gt;
 </code></pre>
 
-<h3>Init</h3>
+	<h3>Init</h3>
 
 <pre><code class="html">
 &lt;script&gt;
-    Checkbix.init();
+Checkbix.init();
 &lt;/script&gt;
 </code></pre>
 
-		<h3>HTML</h3>
-		<input id="mycheckbox" type="checkbox" class="checkbix" data-text="Checkbix">
-
-<pre><code class="html">
-&lt;input id="mycheckbox" type="checkbox" class="checkbix" data-text="Checkbix. Large, checked" data-size="large" checked&gt;
-</code></pre>
-
-		<h3>Size</h3>
-		<input id="myothercheckbox" type="checkbox" class="checkbix" data-text="Checkbix. Large, checked" data-size="large" checked>
-
-<pre><code class="html">
-&lt;input id="myothercheckbox" type="checkbox" class="checkbix" data-text="Checkbix. Large, checked" data-size="large" checked&gt;
-</code></pre>
 
 	<footer class="footer" role="footer">
 		<small>Made by <a href="https://twitter.com/urre">Urban Sandén</a></small>
