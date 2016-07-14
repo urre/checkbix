@@ -20,6 +20,9 @@ Simple styling for checkboxes. Wip.
 
 ## Install
 
+<img src="http://svgporn.com/logos/bower.svg" alt="NPM" style="max-height: 40px;">
+<img src="http://svgporn.com/logos/npm.svg" alt="NPM" style="max-height: 40px;">
+
 ```bash
 bower install checkbix
 ```
