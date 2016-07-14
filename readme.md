@@ -62,3 +62,5 @@ Serve
 
 ### Todo
 + [ ] Options for circled and colors
++ [ ] Describe in readme: feautures, accessibility
++ [ ] Describe in readme: Common JS, Browser global etc
