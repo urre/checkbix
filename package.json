@@ -1,6 +1,6 @@
 {
   "name": "checkbix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple styling for checkboxes",
   "main": "dist/js/checkbix.min.js",
   "scripts": {

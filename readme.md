@@ -6,24 +6,6 @@ Simple styling for checkboxes. Wip.
 
 ## Usage
 
-### Include files
-
-```html
-<link rel="stylesheet" href="dist/css/checkbix.min.css">
-```
-
-```html
-<script src="dist/js/checkbix.min.js"></script>
-```
-
-#### Init
-
-```html
-<script>
-    Checkbix.init();
-</script>
-```
-
 ### Default
 
 ```html
@@ -36,7 +18,35 @@ Simple styling for checkboxes. Wip.
 <input id="myothercheckbox" type="checkbox" class="checkbix" data-text="Checkbix. Large, checked" data-size="large" checked>
 ```
 
-## Dev
+## Install
+
+```bash
+bower install checkbix
+```
+
+```bash
+npm install checkbix
+```
+
+### Include files
+
+```html
+<link rel="stylesheet" href="dist/css/checkbix.min.css">
+```
+
+```html
+<script src="dist/js/checkbix.min.js"></script>
+```
+
+### Init
+
+```html
+<script>
+    Checkbix.init();
+</script>
+```
+
+## Develop
 
 Build
 
@@ -51,4 +61,4 @@ Serve
     npm run serve
 
 ### Todo
-+ [ ] Options for circled, colors etc
++ [ ] Options for circled and colors
