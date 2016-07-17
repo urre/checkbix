@@ -46,7 +46,7 @@ input[type='checkbox'].checkbix:focus + label > span {
 input[type='checkbox'].checkbix:checked + label > span:before {
   content: "";
   position: absolute;
-  top: 2%;
+  top: 1%;
   left: 20%;
   margin-left: auto;
   margin-right: auto;
