@@ -6,7 +6,7 @@ Simple lightweight vanilla Javascript plugin for enhancing checkboxes. Wip.
 
 ## Usage
 
-### [Demo and docs](https://github.com/urre/checkbix)
+### [Demo and docs](https://urre.github.io/checkbix/)
 
 ### Default
 
