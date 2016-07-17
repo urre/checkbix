@@ -66,8 +66,9 @@
 		for (var i = 0; i < checkboxes.length; i++) {
 
 			var size = checkboxes[i].getAttribute('data-size') ? checkboxes[i].getAttribute('data-size') : '';
+			var arialabel = checkboxes[i].getAttribute('data-arialabel') ? checkboxes[i].getAttribute('data-arialabel') : '';
 
-			checkboxes[i].insertAdjacentHTML('afterend', '<label aria-label="Checkbox" role="checkbox" for="'+checkboxes[i].id+'" class="'+settings.initClass+'"><span class="'+size+'"></span>'+checkboxes[i].getAttribute('data-text')+'</label>');
+			checkboxes[i].insertAdjacentHTML('afterend', '<label aria-label="'+arialabel+'" role="checkbox" for="'+checkboxes[i].id+'" class="'+settings.initClass+'"><span class="'+size+'"></span>'+checkboxes[i].getAttribute('data-text')+'</label>');
 		}
 
 	};
