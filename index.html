@@ -83,10 +83,9 @@
 
 	<h1>Checkbix</h1>
 	<h2>Simple lightweight vanilla Javascript plugin for enhancing checkboxes.</h2>
+	<div class="stats"></div>
 
 	<a href="https://travis-ci.org/urre/checkbix"><img src="https://travis-ci.org/urre/checkbix.svg?branch=master" alt="Travis build"> </a>
-
-	<img src="https://badge-size.herokuapp.com/urre/checkbix/master/dist/js/checkbix.min.js.svg?label=JS size" alt="File size">
 
 	<a class="github-button" href="https://github.com/urre/checkbix" data-icon="octicon-star" data-count-href="/urre/checkbix/stargazers" data-count-api="/repos/urre/checkbix#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star urre/checkbix on GitHub">Star</a>
 
@@ -185,6 +184,22 @@ npm install checkbix
 	<script>
 
 		Checkbix.init();
+
+		var request = new XMLHttpRequest();
+		request.open('GET', '../stats.json', true);
+
+		request.onload = function() {
+		  if (request.status >= 200 && request.status < 400) {
+
+		    var data = JSON.parse(request.responseText);
+		    console.log(data);
+		    var stats = document.getElementsByClassName('stats');
+		    stats[0].innerHTML(data);
+
+		  }
+		};
+
+		request.send();
 
 	</script>
 

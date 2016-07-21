@@ -16,7 +16,8 @@
     "build:all": "npm run build:css && npm run build:js",
     "watch:css": "onchange 'src/css' -- npm run build:css",
     "watch:js": "onchange 'src/js' -- npm run build:js",
-    "watch:all": "npm-run-all -p serve watch:css watch:js"
+    "watch:all": "npm-run-all -p serve watch:css watch:js",
+    "stats": "> stats.log && gzip-size dist/css/checkbix.min.css >> stats.log && gzip-size dist/js/checkbix.min.js >> stats.log"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "browser-sync": "^2.12.8",
     "clean-css": "^3.4.18",
     "eslint": "^3.0.1",
+    "human-size": "^1.1.0",
     "npm-run-all": "^2.1.1",
     "onchange": "^2.4.0",
     "postcss-cli": "^2.5.2",
