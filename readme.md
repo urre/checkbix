@@ -1,8 +1,8 @@
 # Checkbix
 
-[![Build Status](https://travis-ci.org/urre/checkbix.svg?branch=master)](https://travis-ci.org/urre/checkbix) ![](https://badge-size.herokuapp.com/urre/checkbix/master/dist/js/checkbix.min.js.svg)
+[![Build Status](https://travis-ci.org/urre/checkbix.svg?branch=master)](https://travis-ci.org/urre/checkbix)
 
-Simple lightweight vanilla Javascript plugin for enhancing checkboxes. Wip.
+Simple lightweight vanilla Javascript plugin for enhancing checkboxes.
 
 ## Usage
 
