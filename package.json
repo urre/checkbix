@@ -14,7 +14,7 @@
     "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/checkbix.js && uglifyjs src/js/*.js -m -c -o dist/js/checkbix.min.js",
     "build:css": "npm run css && npm run autoprefixer && npm run minify-css",
     "build:js": "npm run lint && npm run uglify",
-    "build:all": "npm run build:css && npm run build:js",
+    "build:all": "npm run build:css && npm run build:js && npm run stats",
     "watch:css": "onchange 'src/css' -- npm run build:css",
     "watch:js": "onchange 'src/js' -- npm run build:js",
     "watch:all": "npm-run-all -p serve watch:css watch:js",

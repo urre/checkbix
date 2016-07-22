@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/urre/checkbix.svg?branch=master)](https://travis-ci.org/urre/checkbix)
 
-Simple lightweight vanilla Javascript plugin for enhancing checkboxes.
+Simple vanilla Javascript plugin for enhancing checkboxes. Accessible, lightweight and easy to use. No dependencies.
 
 ## Usage
 
@@ -14,7 +14,7 @@ Simple lightweight vanilla Javascript plugin for enhancing checkboxes.
 <input id="mycheckbox" type="checkbox" class="checkbix" data-text="Checkbix">
 ```
 
-Se [docs](https://urre.github.io/checkbix/) for more information.
+Se [demo](https://urre.github.io/checkbix/) for more examples and settings.
 
 ## Install
 
@@ -53,7 +53,3 @@ Build
 Serve
 
     npm start
-
-### Todo
-+ [ ] Describe in readme: feautures, accessibility
-+ [ ] Describe in readme: Common JS, Browser global etc
