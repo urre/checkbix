@@ -28,6 +28,11 @@ input[type='checkbox'].checkbix + label > span {
   position: relative;
 }
 
+input[type='checkbox'].checkbix:focus + label > span {
+    outline: 0;
+    border-color: rgb(0,20,20);
+    box-shadow: 0 0 0 1px rgba(0,20,20,.5);
+}
 
 input[type='checkbox'].checkbix:checked + label > span {
   background: #5ECD62;
@@ -38,8 +43,8 @@ input[type='checkbox'].checkbix:checked + label > span {
 input[type='checkbox'].checkbix:checked + label > span:before {
   content: "";
   position: absolute;
-  top: 1%;
-  left: 20%;
+  top: 0;
+  left: 22%;
   margin-left: auto;
   margin-right: auto;
   border-right: 2px solid transparent;
@@ -89,8 +94,6 @@ input[type='checkbox'].checkbix[data-size='large'] + label > span {
 
 input[type='checkbox'].checkbix[data-size='large'] + label > span:before {
 	animation: checkboxchecklarge 125ms 50ms cubic-bezier(.1,.0,.1,1) forwards;
-	top: 0%;
-	left: 22%;
 	border-right: 3px solid transparent;
 	border-bottom: 3px solid transparent;
 }

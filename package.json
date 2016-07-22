@@ -4,6 +4,7 @@
   "description": "Simple styling for checkboxes",
   "main": "dist/js/checkbix.min.js",
   "scripts": {
+    "start": "npm run watch:all",
     "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html'",
     "clean": "rm -f dist/{css/*,js/*}",
     "css": "mkdir -p dist/css && cp src/css/* dist/css",
@@ -17,7 +18,8 @@
     "watch:css": "onchange 'src/css' -- npm run build:css",
     "watch:js": "onchange 'src/js' -- npm run build:js",
     "watch:all": "npm-run-all -p serve watch:css watch:js",
-    "stats": "> stats.log && gzip-size dist/css/checkbix.min.css >> stats.log && gzip-size dist/js/checkbix.min.js >> stats.log"
+    "stats": "./stats.sh",
+    "deploy": "./deploy.sh"
   },
   "repository": {
     "type": "git",
