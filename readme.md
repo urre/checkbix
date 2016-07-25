@@ -6,10 +6,6 @@ Simple vanilla Javascript plugin for enhancing checkboxes. Accessible, lightweig
 
 ## Usage
 
-### [Demo and docs](https://urre.github.io/checkbix/)
-
-### Default
-
 ```html
 <input id="mycheckbox" type="checkbox" class="checkbix" data-text="Checkbix">
 ```
