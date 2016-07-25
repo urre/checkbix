@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/urre/checkbix.svg?branch=master)](https://travis-ci.org/urre/checkbix)
 
+[![NPM](https://nodei.co/npm/checkbix.png?compact=true)](https://npmjs.org/package/checkbix)
+
 Simple vanilla Javascript plugin for enhancing checkboxes. Accessible, lightweight and easy to use. No dependencies.
 
 ## Usage
@@ -15,7 +17,7 @@ Se [demo](https://urre.github.io/checkbix/) for more examples and settings.
 ## Install
 
 ```bash
-bower install checkbix
+bower install checkbix.js
 ```
 
 ```bash
