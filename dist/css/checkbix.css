@@ -159,6 +159,7 @@ input[type='checkbox'].checkbix[data-size='large'] + label > span:before {
 	        animation: checkboxchecklarge 125ms 50ms cubic-bezier(.1,.0,.1,1) forwards;
 	border-right: 3px solid transparent;
 	border-bottom: 3px solid transparent;
+	box-sizing: content-box;
 }
 
 @-webkit-keyframes checkboxchecklarge {
