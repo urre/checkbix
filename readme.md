@@ -4,7 +4,7 @@
 
 [![NPM](https://nodei.co/npm/checkbix.png?compact=true)](https://npmjs.org/package/checkbix)
 
-Simple vanilla Javascript plugin for enhancing checkboxes. Accessible, lightweight and easy to use. No dependencies.
+Simple vanilla Javascript plugin for enhancing checkboxes using CSS. Accessible, lightweight and easy to use. No dependencies.
 
 ## Usage
 
@@ -12,7 +12,7 @@ Simple vanilla Javascript plugin for enhancing checkboxes. Accessible, lightweig
 <input id="mycheckbox" type="checkbox" class="checkbix" data-text="Checkbix">
 ```
 
-Se [demo](https://urre.github.io/checkbix/) for more examples and settings.
+See the [demo](https://urre.github.io/checkbix/) for more examples and settings.
 
 ## Install
 
@@ -51,3 +51,15 @@ Build
 Serve
 
     npm start
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

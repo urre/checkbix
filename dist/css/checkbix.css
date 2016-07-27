@@ -232,4 +232,3 @@ input[type='checkbox'].checkbix[data-color='gray']:checked + label > span {
 input[type='checkbox'].checkbix[data-color='orange']:checked + label > span {
 	background: #FF851B;
 }
-
